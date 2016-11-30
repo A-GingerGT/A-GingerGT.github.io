@@ -1,0 +1,112 @@
+header{
+    background: black;
+    color:aliceblue;
+    width:20%;
+    margin-left: 40%;
+}
+nav {
+    margin: 1em;
+    height: 2em;
+    position: fixed;
+    width: 90%;
+    margin-left: 5%;
+    height: 5%;
+    background-color: black;
+    top:0;
+}
+nav ul {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+}
+nav ul li a:hover{
+    color:brown;
+}
+body {
+    font: Geneva;
+    background: black;
+    color: aliceblue;
+}
+h1 {
+    text-align: center;
+    margin-top:100px;
+}
+h2 {
+    font-size:1.5em;
+    text-align: center;
+}
+p {
+    font-size:1em;
+    text-align: center;
+    display: block;
+}
+img{
+    
+}
+.one{
+    display:block;
+    float: left;
+    width: 42.5%;
+    border: .5em solid aliceblue;
+    margin-right: 5%;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 1em;
+}
+.one ul{
+    list-style:none;
+    margin-right: 2.5em;
+}
+.two{
+    display:block;
+    float: right;
+    width: 42.5%;
+    border: .5em solid aliceblue;
+    margin-bottom:1em;
+    text-align: center;
+    padding:1em;
+}
+.two ul{
+    list-style: none;
+    margin-right: 2.5em;
+}
+.three{
+    display: block;
+    width: 42.5%;
+    float: left;
+    padding: 1em;
+    border: .5em solid aliceblue;
+}
+.four{
+    display: block;
+    width: 42.5%;
+    float: right;
+    padding: 1em;
+    border: .5em solid aliceblue;
+    margin-bottom: 2em;
+}
+.img1{
+    text-align: center;
+    float:left;
+    margin-left: 5em;
+}
+.img2{
+    text-align: center;
+    float:right;
+}
+footer{
+    clear: both;
+    padding: 2em;
+    background-color:darkgray;
+    box-shadow: inset 0px 10px 10px -4px rgba(50, 50, 50, 0.5);
+}
