@@ -4,7 +4,7 @@ Written by Austin Ayers
 body {
 	background: url('../Background.jpg');
 }
-h1 {
+#TitleName {
 	color: white;
 	text-align: center;
 	border: 2px solid white;
