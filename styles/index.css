@@ -4,6 +4,30 @@ Written by Austin Ayers
 body {
 	background: url('../Background.jpg');
 }
+p {
+	text-align: center;
+	color: white;
+}
+
+/* Styling the 3 columns to hold subsequent webpages */
+.three-cols {
+	float: left;
+	width: 29%;
+	padding: 10px;
+	margin: 20px;
+	height 250px;
+}
+/* Setting up each box in the three column layout */
+.box-one {
+	background-color: white;
+}
+.box-two {
+	background-color: gray;
+}
+.box-three {
+	background-color: white;
+}
+
 #TitleName {
 	color: white;
 	text-align: center;
