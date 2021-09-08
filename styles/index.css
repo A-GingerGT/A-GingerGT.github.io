@@ -1,6 +1,9 @@
 /*
 Written by Austin Ayers
 */
+body {
+	background: url("../Background.jpg")
+}
 h1 {
 	text-align: center;
 }
