@@ -13,21 +13,19 @@ p {
 .three-cols {
 	float: left;
 	width: 27%;
-	padding: 10px;
-	margin: 20px;
-	height 250px;
+	padding: 2%;
+	margin: 5%;
+	height 15%;
 }
 /* Setting up each box in the three column layout */
 .box-one {
 	background-color: white;
-	color: gray;
 }
 .box-two {
 	background-color: gray;
 }
 .box-three {
 	background-color: white;
-	color: gray;
 }
 
 #TitleName {
