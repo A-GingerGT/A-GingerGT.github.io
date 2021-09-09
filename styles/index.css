@@ -10,13 +10,20 @@ p {
 }
 
 /* Styling the 3 columns to hold subsequent webpages */
-.three-cols {
+.three-cols_1_3 {
 	float: left;
-	width: 27%;
+	width: 30%;
 	padding: 15px;
-	margin: .5%;
 	height 20%;
 }
+.three-cols_2 {
+	float: left;
+	width: 30%;
+	padding: 15px;
+	margin: 5%;
+	height 20%;
+}
+
 /* Setting up each box in the three column layout */
 .box-one {
 	background-color: white;
