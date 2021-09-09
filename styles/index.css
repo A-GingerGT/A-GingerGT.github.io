@@ -20,12 +20,14 @@ p {
 /* Setting up each box in the three column layout */
 .box-one {
 	background-color: white;
+	color: gray;
 }
 .box-two {
 	background-color: gray;
 }
 .box-three {
 	background-color: white;
+	color: gray;
 }
 
 #TitleName {
