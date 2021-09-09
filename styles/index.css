@@ -20,6 +20,7 @@ p {
 /* Setting up each box in the three column layout */
 .box-one {
 	background-color: white;
+	color: black;
 }
 .box-two {
 	background-color: gray;
