@@ -22,8 +22,8 @@ p {
 	float: left;
 	width: 30%;
 	padding: 15px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 	height 20%;
 }
 
@@ -46,5 +46,5 @@ p {
 	border-radius: 5px 20px;
 }
 #Clickables {
-	margin: 5%;
+	margin: 2.5%;
 }
