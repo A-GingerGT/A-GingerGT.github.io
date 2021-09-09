@@ -22,7 +22,8 @@ p {
 	float: left;
 	width: 30%;
 	padding: 15px;
-	/*margin: 5%;*/
+	margin-left: 5%;
+	margin-right: 5%;
 	height 20%;
 }
 
