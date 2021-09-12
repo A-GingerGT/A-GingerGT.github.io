@@ -49,3 +49,17 @@ p {
 	margin: .1%;
 	padding: 15px;
 }
+
+#Bio {
+	float: left;
+	padding: 15px;
+	width: 45%;
+	margin: 2.5%;
+}
+
+#Headshot {
+	float: left;
+	padding: 15px;
+	width: 45%;
+	margin: 2.5%;
+}
