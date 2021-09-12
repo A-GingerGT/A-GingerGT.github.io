@@ -11,6 +11,7 @@ p {
 
 .inline_row {
 	float: left;
+	height: 20%;
 }
 
 /* Styling the 3 columns to hold subsequent webpages */
