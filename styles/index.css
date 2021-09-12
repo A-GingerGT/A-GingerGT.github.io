@@ -51,14 +51,14 @@ p {
 }
 
 #Bio {
-	float: left;
+	text-align: center;
 	padding: 15px;
 	width: 40%;
 	margin: 2.5%;
 }
 
 #Headshot {
-	float: left;
+	text-align: center;
 	padding: 15px;
 	width: 40%;
 	margin: 2.5%;
