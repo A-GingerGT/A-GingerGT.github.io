@@ -9,6 +9,10 @@ p {
 	color: red;
 }
 
+.inline_row {
+	float: left;
+}
+
 /* Styling the 3 columns to hold subsequent webpages */
 .three-cols_1_3 {
 	float: left;
