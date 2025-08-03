@@ -1,69 +1,25 @@
 /*
 Written by Austin Ayers
 */
-body {
-	background: url('../Background.jpg');
-}
-p {
-	text-align: center;
-	color: red;
+
+.top-components {
+	display: flex;
+	width: 100%;
 }
 
-.inline_row {
-/* 	float: left; */
-	margin: 5%;
-	height: 20%;
+.card-basic {
+    width: 48%;
+	margin-bottom: var(--sl-spacing-2x-small);
 }
 
-/* Styling the 3 columns to hold subsequent webpages */
-.three-cols_1_3 {
-	float: left;
-	width: 30%;
-	padding: 15px;
-	margin-top: 5%
-	height 20%;
-}
-.three-cols_2 {
-	float: left;
-	width: 30%;
-	padding: 15px;
-	margin-left: 1%;
-	margin-right: 1%;
-	margin-bottom: 1%;
-	height 20%;
+.details-group-example {
+	width: 48%;
 }
 
-/* Setting up each box in the three column layout */
-.box-one {
-	background-color: white;
-}
-.box-two {
-	background-color: gray;
-}
-.box-three {
-	background-color: white;
+.details-group-example sl-details:not(:last-of-type) {
+    margin-bottom: var(--sl-spacing-2x-small);
 }
 
-#TitleName {
-	color: white;
-	text-align: center;
-	border: 2px solid white;
-	border-radius: 5px 20px;
-}
-
-#Clickables {
-	margin: .1%;
-	padding: 15px;
-}
-
-#Bio {
-	padding: 15px;
-	width: 25%;
-	margin: 2%;
-}
-
-#Headshot {
-	padding: 15px;
-	width: 45%;
-	margin: 2%;
+.headshot-and-pitch {
+	float: right;
 }

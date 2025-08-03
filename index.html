@@ -2,34 +2,48 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+		<script type="text/javascript" src="scripts/index.js"></script>
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
 	</head>
 	
 	<body>
 
-		<h1 id="TitleName">Austin Michael Ayers</h1>
-
-		<div class="inline_row">
-			<div id="Bio"> 
-				<p>Here is where a bio of myself with some personal stuff and a brief history of myself goes</p>
-			</div>
+		<h1 id="TitleName">Austin Ayers</h1>
+		<div class="top-components">
+			<sl-card class="card-basic">
+				This is just a basic card. No image, no header, and no footer. Just your content.
+			</sl-card>
 			
-			<div id="Headshot">
-				<p>(Insert my headshot here, prolly with a circular style to it)</p>
+			<sl-divider vertical style="--color: black"></sl-divider>
+
+			<div class="details-group-example">
+				<sl-details summary="Education" class="dropdown">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</sl-details>
+				
+				<sl-details summary="Technical Skills" class="dropdown">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</sl-details>
+				
+				<sl-details summary="Work Experience" class="dropdown">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</sl-details>
 			</div>
 		</div>
 
-		<div id="Clickables">
-		<div class="three-cols_1_3 box-one">
-			<p> Test 1</p>
-		</div>
-		
-		<div class="three-cols_2 box-two">
-			<p> Test 2</p>
-		</div>
-		
-		<div class="three-cols_1_3 box-three">
-			<p> Test 3</p>
-		</div>
-		</div>
+		<script>
+			const container = document.querySelector('.details-group-example');
+
+			// Close all other details when one is shown
+			container.addEventListener('sl-show', event => {
+				if (event.target.localName === 'sl-details') {
+					[...container.querySelectorAll('sl-details')].map(details => (details.open = event.target === details));
+				}
+			});
+		</script>
 	</body>
 </html>
