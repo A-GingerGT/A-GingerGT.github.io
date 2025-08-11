@@ -2,48 +2,93 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles/index.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+		<link rel="stylesheet" href="styles/background.css">
 		<script type="text/javascript" src="scripts/index.js"></script>
-		<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
 	</head>
 	
 	<body>
-
-		<h1 id="TitleName">Austin Ayers</h1>
-		<div class="top-components">
-			<sl-card class="card-basic">
-				This is just a basic card. No image, no header, and no footer. Just your content.
-			</sl-card>
-			
-			<sl-divider vertical style="--color: black"></sl-divider>
-
-			<div class="details-group-example">
-				<sl-details summary="Education" class="dropdown">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</sl-details>
-				
-				<sl-details summary="Technical Skills" class="dropdown">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</sl-details>
-				
-				<sl-details summary="Work Experience" class="dropdown">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</sl-details>
-			</div>
+		<!-- These elements create the descending lines in the background -->
+		<div class="lines">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
 		</div>
 
-		<script>
-			const container = document.querySelector('.details-group-example');
-
-			// Close all other details when one is shown
-			container.addEventListener('sl-show', event => {
-				if (event.target.localName === 'sl-details') {
-					[...container.querySelectorAll('sl-details')].map(details => (details.open = event.target === details));
-				}
-			});
-		</script>
+		<div class="box-frame">
+			<div class="primary-info">
+				<div class="bubble-name-title">
+					<div class="name-title-content">
+						<h1 class="name">Austin Ayers</h1>
+						<h2 class="title">Software Engineer with Clinisys Software</h2>
+					</div>
+				</div>
+				<div class="bubble-links">
+					<h1>Contact/Links</h1>
+					<ul class="list-links">
+						<li><a class="link-email" href="mailto:amayers123@yahoo.com" target="_blank">Email</a></li>
+						<li><a class="link-linkedin" href="https://www.linkedin.com/in/austin-ayers-b878a914b/" target="_blank">LinkedIn</a></li>
+						<li><a class="link-github" href="https://github.com/A-GingerGT" target="_blank">GitHub</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="auxillary-info">
+				<div class="bubble-work-experience">
+					<h2 class="work-heading">Work Experience</h2>
+					<h3 class="work-subheading">Software Engineer - (2024 to Present)</h3>
+					<ul class="work-content">
+						<li>Working on the Orchard Device Engine team, supporting and developing an enterprise Java application</li>
+						<li>Maintaing good code quality through rigorous code review and </li>
+						<li>Developing and maintaining workplace tools to accelerate productivity and gaining increased data to make more
+							informed product decisions
+						</li>
+					</ul>
+					<h3 class="work-subheading">Software Engineer in Test - (2021 to 2024)</h3>
+					<ul class="work-content">
+						<li>Iterated upon and maintained an automated Regression Testing pipeline using technologies such as Docker and Selenium</li>
+						<li>Insured reliabiligy in project releases by completing testing for initial operating capacities for product features</li>
+					</ul>
+				</div>
+				<div class="bubble-education">
+					<h2 class="education-heading">Education</h2>
+					<h3 class="education-subheading">Graduated May 2021</h3>
+					<hr />
+					<p class="education-content">B.S. in Computer Science from Georgia Tech</p>
+				</div>
+				<div class="bubble-projects-skills">
+					<h2 class="projects-heading">Personal Projects</h2>
+					<h3 class="projects-subheading">College Basketball Total Points Analyzer</h3>
+					<ul class="projects-content">
+						<li>Comprised as two components: a web scraper to get stats from recent games to use as features, and a regressor
+							using the SciKit-Learn library to train the model and "predict" scores in subsequent games when fed a matchup
+						</li>
+						<li class="skills">Tech Stack: Python, Beautiful Soup, Pandas, SciKit-Learn</li>
+					</ul>
+					<h3 class="projects-subheading">College Basketball Key Stat Comparer</h3>
+					<ul class="projects-content">
+						<li>A script to quickly create a graphical representation for comparison of seven key stats for college Basketball
+							games such as shooting percentage with two given teams
+						</li>
+						<li class="skills">Tech Stack: Python, Beautiful Soup, Pandas</li>
+					</ul>
+				</div>
+				<div class="bubble-on-deck">
+					<h2 class="on-deck-heading">What's on Deck?</h2>
+					<h3>Experimentation with AI Models using OLlama</h3>
+					<hr />
+					<h3>Experimentation with AI Automation using n8n</h3>
+				</div>
+				<div class="bubble-offline">
+					<h2 class="offline-heading">Other Interests</h2>
+					<h3>American Sports, All Types of Music, and Living Life to Have Fun</h3>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
