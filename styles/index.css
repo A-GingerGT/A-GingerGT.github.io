@@ -24,6 +24,10 @@ div[class*=bubble-] {
 	overflow: scroll;
 }
 
+div[class*=bubble-]::-webkit-scrollbar {
+	display: none;
+}
+
 [class*=link-] {
 	text-decoration: none;
 	color: inherit;
