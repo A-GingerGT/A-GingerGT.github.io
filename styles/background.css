@@ -16,7 +16,7 @@
 	background-color: #111;  /* Background color */
 	color: #f2f2f2;  /* Text color */
 	/*line-height: 1.6;*/
-	position: relative;
+	position: absolute;
 	font-family: 'Courier New', Courier, monospace;
 	overflow: hidden;
   }

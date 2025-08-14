@@ -133,6 +133,10 @@ div[class*=bubble-]::-webkit-scrollbar {
 	padding: 3px;
 }
 
+.on-deck-content {
+	margin-left: 5%;
+}
+
 .bubble-offline {
 	width: 25%;
 	float: left;
