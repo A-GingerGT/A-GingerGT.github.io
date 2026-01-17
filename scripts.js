@@ -18,20 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Navbar scroll effect
+    // Navbar scroll effect - hidden at top, visible when scrolling
     const nav = document.querySelector('nav');
-    let lastScroll = 0;
 
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
 
         if (currentScroll > 100) {
+            nav.classList.add('visible');
             nav.classList.add('scrolled');
         } else {
+            nav.classList.remove('visible');
             nav.classList.remove('scrolled');
         }
-
-        lastScroll = currentScroll;
     });
 
     // Intersection Observer for fade-in animations

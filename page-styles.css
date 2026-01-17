@@ -35,7 +35,16 @@ nav {
     background-color: var(--bg-white);
     box-shadow: var(--shadow);
     z-index: 1000;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 nav.scrolled {
@@ -504,7 +513,7 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     nav .container {
         flex-direction: column;
         gap: 1rem;
