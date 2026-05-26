@@ -1,0 +1,36 @@
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.aboutText h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.aboutText p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profileImage {
+    margin: 0 auto;
+  }
+}
